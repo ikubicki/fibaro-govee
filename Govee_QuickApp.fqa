@@ -1,0 +1,287 @@
+{
+    "name": "Govee QuickApp",
+    "type": "com.fibaro.colorController",
+    "apiVersion": "1.3",
+    "initialProperties": {
+        "viewLayout": {
+            "$jason": {
+                "body": {
+                    "header": {
+                        "style": {
+                            "height": "0"
+                        },
+                        "title": "goveeQuickApp"
+                    },
+                    "sections": {
+                        "items": [
+                            {
+                                "components": [
+                                    {
+                                        "components": [
+                                            {
+                                                "name": "listDevices",
+                                                "style": {
+                                                    "weight": "0.50"
+                                                },
+                                                "text": "List devices",
+                                                "type": "button",
+                                                "visible": true
+                                            },
+                                            {
+                                                "name": "updateDevice",
+                                                "style": {
+                                                    "weight": "0.50"
+                                                },
+                                                "text": "Update device",
+                                                "type": "button",
+                                                "visible": true
+                                            }
+                                        ],
+                                        "style": {
+                                            "weight": "1.2"
+                                        },
+                                        "type": "horizontal"
+                                    },
+                                    {
+                                        "style": {
+                                            "weight": "0.5"
+                                        },
+                                        "type": "space"
+                                    }
+                                ],
+                                "style": {
+                                    "weight": "1.2"
+                                },
+                                "type": "vertical"
+                            },
+                            {
+                                "components": [
+                                    {
+                                        "name": "label1",
+                                        "style": {
+                                            "weight": "1.2"
+                                        },
+                                        "text": "Govee QuickApp v.1.0.0",
+                                        "type": "label",
+                                        "visible": true
+                                    },
+                                    {
+                                        "style": {
+                                            "weight": "0.5"
+                                        },
+                                        "type": "space"
+                                    }
+                                ],
+                                "style": {
+                                    "weight": "1.2"
+                                },
+                                "type": "vertical"
+                            }
+                        ]
+                    }
+                },
+                "head": {
+                    "title": "goveeQuickApp"
+                }
+            }
+        },
+        "uiView": [
+            {
+                "components": [
+                    {
+                        "eventBinding": {
+                            "onLongPressDown": [
+                                {
+                                    "params": {
+                                        "actionName": "UIAction",
+                                        "args": [
+                                            "onLongPressDown",
+                                            "listDevices"
+                                        ]
+                                    },
+                                    "type": "deviceAction"
+                                }
+                            ],
+                            "onLongPressReleased": [
+                                {
+                                    "params": {
+                                        "actionName": "UIAction",
+                                        "args": [
+                                            "onLongPressReleased",
+                                            "listDevices"
+                                        ]
+                                    },
+                                    "type": "deviceAction"
+                                }
+                            ],
+                            "onReleased": [
+                                {
+                                    "params": {
+                                        "actionName": "UIAction",
+                                        "args": [
+                                            "onReleased",
+                                            "listDevices"
+                                        ]
+                                    },
+                                    "type": "deviceAction"
+                                }
+                            ]
+                        },
+                        "name": "listDevices",
+                        "style": {
+                            "weight": "0.50"
+                        },
+                        "text": "List devices",
+                        "type": "button",
+                        "visible": true
+                    },
+                    {
+                        "eventBinding": {
+                            "onLongPressDown": [
+                                {
+                                    "params": {
+                                        "actionName": "UIAction",
+                                        "args": [
+                                            "onLongPressDown",
+                                            "updateDevice"
+                                        ]
+                                    },
+                                    "type": "deviceAction"
+                                }
+                            ],
+                            "onLongPressReleased": [
+                                {
+                                    "params": {
+                                        "actionName": "UIAction",
+                                        "args": [
+                                            "onLongPressReleased",
+                                            "updateDevice"
+                                        ]
+                                    },
+                                    "type": "deviceAction"
+                                }
+                            ],
+                            "onReleased": [
+                                {
+                                    "params": {
+                                        "actionName": "UIAction",
+                                        "args": [
+                                            "onReleased",
+                                            "updateDevice"
+                                        ]
+                                    },
+                                    "type": "deviceAction"
+                                }
+                            ]
+                        },
+                        "name": "updateDevice",
+                        "style": {
+                            "weight": "0.50"
+                        },
+                        "text": "Update device",
+                        "type": "button",
+                        "visible": true
+                    }
+                ],
+                "style": {
+                    "weight": "1.0"
+                },
+                "type": "horizontal"
+            },
+            {
+                "components": [
+                    {
+                        "name": "label1",
+                        "style": {
+                            "weight": "1.0"
+                        },
+                        "text": "Govee QuickApp v.1.0.0",
+                        "type": "label",
+                        "visible": true
+                    }
+                ],
+                "style": {
+                    "weight": "1.0"
+                },
+                "type": "horizontal"
+            }
+        ],
+        "useUiView": true,
+        "uiCallbacks": [
+            {
+                "callback": "listDevices",
+                "eventType": "onReleased",
+                "name": "listDevices"
+            },
+            {
+                "callback": "",
+                "eventType": "onLongPressDown",
+                "name": "listDevices"
+            },
+            {
+                "callback": "",
+                "eventType": "onLongPressReleased",
+                "name": "listDevices"
+            },
+            {
+                "callback": "updateDevice",
+                "eventType": "onReleased",
+                "name": "updateDevice"
+            },
+            {
+                "callback": "",
+                "eventType": "onLongPressDown",
+                "name": "updateDevice"
+            },
+            {
+                "callback": "",
+                "eventType": "onLongPressReleased",
+                "name": "updateDevice"
+            }
+        ],
+        "quickAppVariables": [
+            {
+                "name": "ApiKey",
+                "type": "password",
+                "value": ""
+            },
+            {
+                "name": "DeviceID",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "name": "Interval",
+                "type": "string",
+                "value": "60"
+            },
+            {
+                "name": "Debug",
+                "type": "string",
+                "value": ""
+            }
+        ],
+        "typeTemplateInitialized": true
+    },
+    "initialInterfaces": [],
+    "files": [
+        {
+            "name": "main",
+            "isMain": true,
+            "isOpen": true,
+            "content": "--[[\nGovee QuickApp\n@author ikubicki\n@version 1.0.0\n]]\n\nfunction QuickApp:turnOn()\n    self:setValue(99)\n    self.sdk:powerSwitch(1)\nend\n\nfunction QuickApp:turnOff()\n    self:setValue(0)\n    self.sdk:powerSwitch(0)\nend\n\nfunction QuickApp:setValue(value)\n    self:updateProperty(\"value\", value)\n    self:changeBrightness(value)\nend\n\nfunction QuickApp:setColor(r, g, b, w, dontPopulate)\n    local color = string.format(\"%d,%d,%d,%d\", r or 0, g or 0, b or 0, w or 0) \n    self:updateProperty(\"color\", color)\n    self:setColorComponents({red = r, green = g, blue = b, warmWhite = w}, dontPopulate)\nend\n\nfunction QuickApp:setColorComponents(colorComponents, dontPopulate)\n    local cc = self.properties.colorComponents\n    if colorComponents[\"warmWhite\"] ~= nil and cc[\"warmWhite\"] ~= colorComponents[\"warmWhite\"] then\n        colorComponents = {\n            red = 255,\n            green = 255,\n            blue = 255,\n            warmWhite = colorComponents[\"warmWhite\"],\n        }\n    end\n    local isColorChanged = false\n    for k,v in pairs(colorComponents) do\n        if cc[k] and cc[k] ~= v then\n            cc[k] = v\n            isColorChanged = true\n        end\n    end\n    if isColorChanged == true then\n        self:updateProperty(\"colorComponents\", cc)\n        if not dontPopulate then\n            self:changeColor(cc)\n        end\n        self:setColor(cc[\"red\"], cc[\"green\"], cc[\"blue\"], cc[\"warmWhite\"], dontPopulate)\n        self:updateView(\"status\", \"text\", \"Color updated\")\n    end\nend\n\nfunction QuickApp:changeBrightness(value)\n    if not self.sdk:canMakeCalls() then return end\n    if value > 0 then\n        if self.properties.value < 1 then\n            self.sdk:powerSwitch(1)\n            self:setValue(100)\n        end\n        self.sdk:setBrightness(value)\n    else\n        if self.properties.value > 0 then\n            self.sdk:powerSwitch(0)\n            self:setValue(0)\n        end\n        self.sdk:setBrightness(0)\n    end\nend\n\nfunction QuickApp:changeColor(rgbw)\n    if not self.sdk:canMakeCalls() then return end\n    if self.properties.value < 1 then\n        self.sdk:powerSwitch(1)\n        self:setValue(99)\n    end\n    self.sdk:setColor(rgbw)\nend\n\nfunction QuickApp:onInit()\n    self:updateProperty(\"colorComponents\", {red=0, green=0, blue=0, warmWhite=0})\n    self.sdk = sdk:new({\n        apikey = self:getVariable(\"ApiKey\"),\n        deviceID = self:getVariable(\"DeviceID\"),\n        debug = self:getVariable(\"Debug\"),\n    })\n    self.interval = self:getVariable('Interval')\n    if not self.interval or self.interval == \"\" then\n        self.interval = 60\n    end\n    self:updateView(\"label1\", \"text\", \"Govee QuickApp\")\n    -- self:updateView(\"listDevices\", \"visible\", true)\n    -- self:updateView(\"updateDevice\", \"visible\", false)\n\n    if not self.sdk:hasApiKey() then\n        self:updateView(\"label1\", \"text\", \"API KEY not set. Please update the settings.\")\n        -- self:updateView(\"listDevices\", \"visible\", false)\n    elseif not self.sdk:hasDeviceID() then\n        self:updateView(\"label1\", \"text\", \"Device ID not set. Please click list devices and update the settings.\")\n    else\n        -- self:updateView(\"listDevices\", \"visible\", false)\n        -- self:updateView(\"updateDevice\", \"visible\", true)\n    end\n    self:run()\nend\n\nfunction QuickApp:run()\n    self:updateDevice()\n    if self.sdk:canMakeCalls() then\n        local interval = self.interval * 1000\n        if self.properties.dead then\n            interval = 3600000\n        end\n        fibaro.setTimeout(interval, function() self:run() end)\n    end\nend\n\nfunction QuickApp:updateDevice()\n    local resolve = function (device)\n        -- QuickApp:debug(json.encode(device))\n        -- QuickApp:debug('online', device.online)\n        -- QuickApp:debug('brightness', device.brightness)\n        -- QuickApp:debug('rgb', json.encode(device.rgb))\n        -- QuickApp:debug('powerSwitch', device.powerSwitch)\n        -- QuickApp:debug('warmWhite', device.warmWhite)\n        if not device.rgb then device.rgb = {red = nil, green = nil, blue = nil} end\n        if not device.powerSwitch then device.brightness = 0 end\n        self:setColorComponents({\n            red = device.rgb.red,\n            green = device.rgb.green,\n            blue = device.rgb.blue,\n            warmWhite = device.warmWhite\n        }, true)\n        self:updateProperty(\"value\", device.brightness)\n        if device.online then\n            self:updateProperty(\"dead\", false)\n            self:updateProperty(\"deadReason\", nil)\n        else \n            self:updateProperty(\"dead\", true)\n            self:updateProperty(\"deadReason\", \"Device offline\")\n        end\n        self:updateView(\"label1\", \"text\", \"Device information updated at \" .. os.date('%Y-%m-%d %H:%M:%S'))\n    end\n    local reject = function (response)\n        QuickApp:debug(json.encode(response))\n    end\n    if self.sdk:canMakeCalls() then\n        self.sdk:getDeviceStatus(resolve, reject)\n    end\nend\n\nfunction QuickApp:listDevices()\n    local resolve = function (devices)\n        self:updateView(\"label1\", \"text\", #devices .. \" device(s) found.<br />Check the logs of the application to see the list.\");\n        for _, device in ipairs(devices) do\n            -- QuickApp:trace(json.encode(device))\n            if device.type == 'devices.types.light' then\n                QuickApp:trace('🟢 ' .. device.deviceName)\n                QuickApp:trace(' .. ID: ' .. device.sku .. '.' .. device.device)\n                QuickApp:trace(' .. Type: ' .. device.type)\n                QuickApp:trace(' .. Model: ' .. device.sku)\n            else\n                QuickApp:trace('🔴 ' .. device.deviceName)\n                QuickApp:trace(' .. ID: not supported')\n                QuickApp:trace(' .. Type: ' .. device.type)\n                QuickApp:trace(' .. Model: ' .. device.sku)\n            end\n        end\n        if #devices == 1 and device.type == 'devices.types.light' then\n            self:updateView(\"label1\", \"text\", #devices .. \" device(s) found.<br />Device will be assigned to the application automatically.\");\n            self:setVariable(\"DeviceID\", devices[1].sku .. '.' .. devices[1].device)\n        end\n    end\n    local reject = function (response)\n        self:updateView(\"label1\", \"text\", \"Cannot retrieve the list of devices [\" .. response.status .. \"]\");\n    end\n    self.sdk:listDevices(resolve, reject)\nend\n"
+        },
+        {
+            "name": "client",
+            "isMain": false,
+            "isOpen": false,
+            "content": "--[[\nHTTP client\n@author ikubicki\n]]\n\nclass 'client'\n\nfunction client:new(options)\n    self.options = options or {}\n    return self\nend\n\nfunction client:get(path, resolve, reject)\n    self:request(self:url(path), self:buildOptions(resolve, reject, 'GET')) \nend\n\nfunction client:post(path, data, resolve, reject)\n    self:request(self:url(path), self:buildOptions(resolve, reject, 'POST', data)) \nend\n\nfunction client:put(path, data, resolve, reject)\n    self:request(self:url(path), self:buildOptions(resolve, reject, 'PUT', data)) \nend\n\nfunction client:delete(path, resolve, reject)\n    self:request(self:url(path), self:buildOptions(resolve, reject, 'DELETE')) \nend\n\nfunction client:request(url, options)\n    if self.options.show_debug then \n        QuickApp:debug(\"Making a \" .. options.options.method .. \" to \" .. url)\n        QuickApp:debug(json.encode(options.options))\n    end\n    local httpclient = net.HTTPClient({timeout=10000})\n    httpclient:request(url, options) \nend\n\nfunction client:url(path)\n    if (string.sub(path, 0, 4) == 'http') then\n        return path\n    end\n    if not self.options.base_url then\n        self.options.base_url = 'http://localhost'\n    end\n    return self.options.base_url .. tostring(path)\nend\n\nfunction client:buildOptions(resolve, reject, method, data)\n    \n    local success = function (response)\n        if response.status < 300 then\n            return resolve(response)\n        end\n        if self.options.show_errors then\n            QuickApp:error(\"Error response [\" .. response.status .. \"]\")\n            QuickApp:error(response.data)\n        end\n        return reject({\n            status = response.status\n        })\n    end\n    \n    local error = function (error)\n        reject(error)\n    end\n\n    if (method == nil) then\n        method = 'GET'\n    end\n    local options = {\n        checkCertificate = false,\n        method = method,\n        headers = {\n            [\"Content-Type\"] = 'application/json', \n            [\"Govee-API-Key\"] = self.options.apikey or '',\n        },\n    }\n    if (data ~= nil) then\n        options.data = json.encode(data)\n    end\n    return {\n        options = options,\n        success = success,\n        error = error\n    }\nend"
+        },
+        {
+            "name": "sdk",
+            "isMain": false,
+            "isOpen": false,
+            "content": "--[[\nGovee SDK\n@author ikubicki\n]]\n\nclass 'sdk'\n\nfunction sdk:new(options)\n    self.deviceSKU = \"\"\n    self.deviceID = \"\"\n    if options.deviceID and options.deviceID ~= \"\" then\n        local position = string.find(options.deviceID, \"%.\")\n        self.deviceSKU = string.sub(options.deviceID, 1, position - 1)\n        self.deviceID = string.sub(options.deviceID, position + 1)\n    end\n    self.requestID = 0\n    self.apikey = options.apikey\n    self.client = client:new({\n        base_url = 'https://openapi.api.govee.com',\n        apikey = options.apikey,\n        show_debug = options.debug and options.debug ~= \"\",\n        show_errors = true,\n    })\n    return self\nend\n\nfunction sdk:canMakeCalls()\n    return self:hasDeviceID() and self:hasApiKey()\nend\n\nfunction sdk:hasDeviceID()\n    return string.len(self.deviceID) > 10 and (string.find(self.deviceID, \"%.\") or self.deviceSKU)\nend\n\nfunction sdk:hasApiKey()\n    return string.len(self.apikey) > 3\nend\n\nfunction sdk:listDevices(resolve, reject)\n    local _resolve = function(response)\n        if resolve then resolve(json.decode(response.data).data) end\n    end\n    self.client:get('/router/api/v1/user/devices', _resolve, reject)\nend\n\nfunction sdk:buildPayload(capability)\n    self.requestID = self.requestID + 1\n    return {\n        requestId = self.requestID,\n        payload = {\n            sku = self.deviceSKU,\n            device = self.deviceID,\n            capability = capability\n        }\n    }\nend\n\nfunction sdk:getDeviceStatus(resolve, reject)\n    local _resolve = function(response)\n        local response = json.decode(response.data)\n        local status = {}\n        for _, capability in ipairs(response.payload.capabilities) do\n            if self:shouldSet(capability.state.value) then\n                status[capability.instance] = capability.state.value\n                if capability.instance == 'colorTemperatureK' then\n                    status['warmWhite'] = self:kelvintoint(status['colorTemperatureK'])\n                    status['rgb'] = self:inttorgb(16777215) \n                end\n                if capability.instance == 'colorRgb' then\n                    status['rgb'] = self:inttorgb(status['colorRgb'])\n                end\n            end\n        end\n        if resolve then resolve(status) end\n    end\n    local payload = sdk:buildPayload()\n    self.client:post('/router/api/v1/device/state', payload, _resolve, reject)\nend\n\nfunction sdk:shouldSet(value)\n    return value ~= \"\" and value ~= nil and value ~= 0\nend\n\nfunction sdk:powerSwitch(value, resolve, reject)\n    self:controlDevice({\n        type = \"devices.capabilities.on_off\",\n        instance = \"powerSwitch\",\n        value = value,\n    }, resolve, reject)\nend\n\nfunction sdk:setColor(rgbw, resolve, reject)\n    self:controlDevice({\n        type = \"devices.capabilities.color_setting\",\n        instance = \"colorTemperatureK\",\n        value = self:inttokelvin(rgbw.warmWhite),\n    }, resolve, reject)\n    self:controlDevice({\n        type = \"devices.capabilities.color_setting\",\n        instance = \"colorRgb\",\n        value = self:rgbtoint(rgbw),\n    }, resolve, reject)\nend\n\nfunction sdk:setBrightness(brightness, resolve, reject)\n    self:controlDevice({\n        type = \"devices.capabilities.range\",\n        instance = \"brightness\",\n        value = brightness,\n    }, resolve, reject)\nend\n\nfunction sdk:controlDevice(capability, resolve, reject)\n    local _resolve = function(response)\n        if resolve then resolve(json.decode(response.data).payload) end\n    end\n    local payload = sdk:buildPayload(capability)\n    self.client:post('/router/api/v1/device/control', payload, _resolve, reject)\nend\n\nfunction sdk:rgbtoint(rgbw)\n    local blue = rgbw.blue\n    local green = rgbw.green * 256\n    local red = rgbw.red * 65536\n    return red + green + blue\nend\n\nfunction sdk:inttorgb(int)\n    local blue = int % 256\n    local green = (int - blue) % 65536\n    local red = int - green - blue\n    return {\n        red = math.floor(red / 65536),\n        green = math.floor(green / 256, 0),\n        blue = blue\n    }\nend\n\nGLITCH_RATIO = 168.647058824\nKELVIN_RATIO = 27.4509803922\n\nfunction sdk:kelvintoint(kelvin)\n    if kelvin > 10000 then\n        -- when kelvin is expressed between 53255 (warm) and 10250 (cold)\n        -- probably an iOS app glitch\n        return math.ceil((kelvin - 10250) / GLITCH_RATIO)\n    end\n    -- when kelvin is expressed between 2k (warm) and 9k (cold)\n    return 255 - math.ceil((kelvin - 2000) / KELVIN_RATIO)\nend\n\nfunction sdk:inttokelvin(int)\n    return math.floor((255 - int) * KELVIN_RATIO) + 2000\nend"
+        }
+    ]
+}
