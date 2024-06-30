@@ -90,16 +90,19 @@ function sdk:powerSwitch(value, resolve, reject)
 end
 
 function sdk:setColor(rgbw, resolve, reject)
-    self:controlDevice({
-        type = "devices.capabilities.color_setting",
-        instance = "colorTemperatureK",
-        value = self:inttokelvin(rgbw.warmWhite),
-    }, resolve, reject)
-    self:controlDevice({
-        type = "devices.capabilities.color_setting",
-        instance = "colorRgb",
-        value = self:rgbtoint(rgbw),
-    }, resolve, reject)
+    if (rgbw.red > 254 and rgbw.green > 254 and rgbw.blue > 254) then
+        self:controlDevice({
+            type = "devices.capabilities.color_setting",
+            instance = "colorTemperatureK",
+            value = self:inttokelvin(rgbw.warmWhite),
+        }, resolve, reject)
+    else
+        self:controlDevice({
+            type = "devices.capabilities.color_setting",
+            instance = "colorRgb",
+            value = self:rgbtoint(rgbw),
+        }, resolve, reject)
+    end
 end
 
 function sdk:setBrightness(brightness, resolve, reject)
